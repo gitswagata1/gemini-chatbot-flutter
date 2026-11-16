@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title> HTML CSS JS and React Template</title>
+
+  <!-- React + ReactDOM -->
+  <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <!-- Part-1: CSS -->
+  <style>
+    body{
+        text-align: center;
+        font-family: sans-serif;
+        padding:20px;
+        background-color: #595ac4;
+    }
+    
+    #web-container, #root {
+        width: 400px;
+        height: 200px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 20px;
+        background: aqua;
+        border-radius: 20px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+    
+    button{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- Part-1: Normal HTML Web Page container -->
+  <div id="web-container">
+      <h2> Standard HTML Section </h2>
+      <button onclick = "sayHello()"> Click Me</button>
+      <p id = "message"></p>
+  </div>
+  
+  <!-- Part-1: Vanilla JavaScript -->
+  <script>
+    function sayHello() {
+        document.getElementById("message").textContent = "Hello from Vanilla JS!";
+    }
+
+  </script>
+
+  <!-- Part-2: React App container -->
+  <div id="root"></div>
+
+  <!-- Part-2: React JSX Code -->
+  <script type="text/babel">
+    function App(){
+        const header = {
+            fontWeight: "bold"
+        }
+        const para={
+            color: "red"
+        }
+        
+        return(
+            <div>
+                <h2 style={header}> React Section</h2>
+                <p> Hello from React! </p>
+            </div>
+            );
+    }
+    
+    const root = ReactDOM.createRoot(document.getElementById("root"));
+    root.render(<App/>);
+
+
+  </script>
+
+</body>
+</html>
