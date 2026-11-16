@@ -8,6 +8,7 @@ Markdown-rendered conversation view.
 ![Flutter](https://img.shields.io/badge/Flutter-3.6+-02569B?logo=flutter&logoColor=white)
 ![Dart](https://img.shields.io/badge/Dart-3.6-0175C2?logo=dart&logoColor=white)
 ![Gemini](https://img.shields.io/badge/Google_Gemini-2.0_Flash-4285F4?logo=googlegemini&logoColor=white)
+[![CI](https://github.com/gitswagata1/gemini-chatbot-flutter/actions/workflows/ci.yml/badge.svg)](https://github.com/gitswagata1/gemini-chatbot-flutter/actions/workflows/ci.yml)
 ![License](https://img.shields.io/badge/License-MIT-green)
 
 </div>
@@ -21,6 +22,9 @@ Markdown-rendered conversation view.
 - [Project structure](#project-structure)
 - [Testing](#testing)
 - [Security notes](#security-notes)
+- [Roadmap](#roadmap)
+- [Contributing](#contributing)
+- [Citation](#citation)
 - [License](#license)
 
 ## Features
@@ -109,6 +113,23 @@ flutter test
   client app can be extracted, so for a production release route Gemini calls through your
   own backend instead of shipping the key in the app.
 - Restrict the key in Google AI Studio and rotate it if it is ever exposed.
+
+## Roadmap
+
+Planned work, ideas for taking the project further and open research questions are in
+[ROADMAP.md](ROADMAP.md). Good first tasks are labelled
+[`good first issue`](https://github.com/gitswagata1/gemini-chatbot-flutter/labels/good%20first%20issue).
+
+## Contributing
+
+Contributions are welcome. Read [CONTRIBUTING.md](CONTRIBUTING.md) and the
+[Code of Conduct](CODE_OF_CONDUCT.md) first. To report a vulnerability, follow
+[SECURITY.md](SECURITY.md).
+
+## Citation
+
+If you use this project in research or a product, you can cite it using
+[CITATION.cff](CITATION.cff) (GitHub shows a "Cite this repository" button).
 
 ## License
 
